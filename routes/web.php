@@ -16,7 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $name = 'Guglielmo';
     $surname = 'Marra';
-    $codeLang = 'Laravel';
 
-    return view('home', compact('name', 'surname', 'codeLang'));
+    return view('home', compact('name', 'surname'));
 })->name('home');
+
+Route::get('/chi-siamo', function(){
+
+    $name = 'Boolean';
+    $address = 'Viale Cassala 22';
+    $city = '20143 Milano';
+
+    return view('about', compact('name', 'address', 'city'));
+})->name('about');

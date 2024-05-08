@@ -9,7 +9,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css'
         integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=='
         crossorigin='anonymous' />
-    <title>Chi Siamo</title>
+    <title>Primi Passi con Laravel</title>
 </head>
 
 <body>
@@ -34,9 +34,19 @@
             </div>
           </nav>
     </header>
-    <h1 class="text-center">Hello Laravel</h1>
-    <h2 class="fw-bold">Benvenuto</h2>
-    <h4>{{ $name }} {{ $surname }} </h4>
+
+    <h2 class="text-center">About us</h2>
+
+    <div>
+        <h3 class="fw-bold">{{$name}}</h3>
+        <h4>Dove ci trovi</h4>
+        <ul>
+            <li>
+                {{$address}}, {{$city}}
+            </li>
+        </ul>
+    </div>
+
 </body>
 
 </html>
