@@ -15,6 +15,7 @@
 <body>
     <h1>Hello Laravel</h1>
     <h2>Home</h2>
+    <h4>Sono {{ $name }} {{ $surname }} e questo è il mio primo progetto {{ $codeLang }} </h4>
 </body>
 
 </html>
